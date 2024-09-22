@@ -52,7 +52,7 @@ public abstract class Empleado {
     public abstract double Sueldo (); 
     public double sueldoaCobrar (){
         double comision = 0;
-        if(this.getAñoIng()>=2003)
+        if(this.getAñoIng()<=2003)
             comision = (this.getSueldoBasico()/100)*0.10;
         return (this.getSueldoBasico() + comision + this.Sueldo());
     }
